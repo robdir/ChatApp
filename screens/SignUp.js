@@ -27,6 +27,10 @@ export default class SignUp extends Component {
     const Form = t.form.Form;
     return (
       <View style={styles.container}>
+      <KeyboardAvoidingView
+        behaviour="padding"
+        style={styles.container}>
+
         <Text style={styles.title}> Sign up for ChatApp</Text>
         <Form
           ref="form"
@@ -41,6 +45,7 @@ export default class SignUp extends Component {
         <Text style={styles.buttonText}> Sign Up</Text>
         </TouchableHighlight>
         <Text style={styles.regular}> Or don't, whatever... </Text>
+        </KeyboardAvoidingView>
       </View>
     );
   }
