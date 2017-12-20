@@ -59,7 +59,7 @@ class SignUp extends Component {
         />
         <TouchableHighlight
           disabled={loading}
-          style={styles.button}
+          style={styles.buttonPrimary}
           onPress={this.onSubmit}
           underlayColor='#99d9f4'
         >
@@ -68,7 +68,7 @@ class SignUp extends Component {
 
         <TouchableHighlight
           disabled={loading}
-          style={styles.button}
+          style={styles.buttonSecondary}
           onPress={this.onSubmit}
           underlayColor='#99d9f4'
         >

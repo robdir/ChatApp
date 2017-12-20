@@ -24,7 +24,7 @@ export default StyleSheet.create({
     color: 'white',
     alignSelf: 'center'
   },
-  button: {
+  buttonPrimary: {
     height: 36,
     backgroundColor: '#48BBEC',
     borderColor: '#48BBEC',
