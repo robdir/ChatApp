@@ -7,9 +7,9 @@ export default (user) => {
   console.log('creating user...');
   users.create(user)
     .then((result) => {
-      console.log('user created successfully', result);
+      console.log('user successfully created!', result);
     })
     .catch((error) => {
-      console.error('Oh noes, something went wrong', error);
+      console.error('Oh noes, something went wrong :/ ', error);
     });
 }
