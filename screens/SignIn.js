@@ -66,7 +66,7 @@ class SignIn extends Component {
 
             <TouchableHighlight
               disabled={loading}
-              style={styles.buttonPrimary}
+              style={styles.button}
               onPress={this.onSubmit}
               underlayColor='#99d9f4'
             >
@@ -79,7 +79,7 @@ class SignIn extends Component {
               onPress={Actions.signUp}
               underlayColor='#99d9f4'
             >
-              <Text style={styles.buttonText}>Sign up</Text>
+            <Text style={styles.buttonText}>Sign up</Text>
             </TouchableHighlight>
         </KeyboardAvoidingView>
       </View>

@@ -58,12 +58,24 @@ class SignUp extends Component {
           onChange={this.onChange}
         />
         <TouchableHighlight
+          disabled={loading}
           style={styles.button}
           onPress={this.onSubmit}
           underlayColor='#99d9f4'
         >
         <Text style={styles.buttonText}> Sign Up</Text>
         </TouchableHighlight>
+
+        <TouchableHighlight
+          disabled={loading}
+          style={styles.button}
+          onPress={this.onSubmit}
+          underlayColor='#99d9f4'
+        >
+          <Text style={styles.buttonText}>Sign in</Text>
+        </TouchableHighlight>
+
+
         <Text style={styles.regular}> Or don't, whatever... </Text>
         </KeyboardAvoidingView>
       </View>
