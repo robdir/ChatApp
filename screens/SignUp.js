@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import {
   View,
   Text,
@@ -10,7 +11,7 @@ import t from 'tcomb-form-native';
 import User, { formOptions } from '../models/User';
 import signUp from '../actions/users/sign-up';
 
-export default class SignUp extends Component {
+class SignUp extends Component {
   constructor(props) {
     super(props);
 
@@ -36,8 +37,8 @@ export default class SignUp extends Component {
     const { form } = this.refs;
     const newUser = form.getValue();
     if (!newUser) return;
-    signUp(newUser);
-    this.clearForm();
+    console.log(newUser);
+    this.props.signUp(newUser);
   }
 
   render() {
@@ -69,3 +70,7 @@ export default class SignUp extends Component {
     );
   }
 }
+
+const mapStateToProps = ({ loading }) => ({ loading });
+
+export default connect(mapStateToProps, { signUp })(SignUp);
