@@ -20,9 +20,7 @@ export default class SignUp extends Component {
   }
 
   componentDidMount() {
-
   this.refs.form.getComponent('name').refs.input.focus();
-
   }
 
   clearForm() {
