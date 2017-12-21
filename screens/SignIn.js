@@ -42,6 +42,7 @@ class SignIn extends Component {
     if (!user) return;
     console.log(user);
     this.props.signIn(user);
+    Actions.chatRoom();
   }
 
   render() {

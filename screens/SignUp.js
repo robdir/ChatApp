@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Actions } from 'react-native-router-flux';
 import {
   View,
   Text,
@@ -26,7 +27,7 @@ class SignUp extends Component {
   }
 
   clearForm() {
-    this.setState({ newUser: null });
+    this.setState({ newUser: null }); 
   }
 
   onChange(newUser) {
@@ -68,6 +69,7 @@ class SignUp extends Component {
         <TouchableHighlight
           style={styles.buttonSecondary}
           onPress={this.onSubmit}
+          onPress={Actions.signIn}
           underlayColor='#99d9f4'
         >
           <Text style={styles.buttonText}>Sign in</Text>

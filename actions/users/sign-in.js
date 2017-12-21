@@ -19,7 +19,7 @@ export default (user) => {
     api.authenticate(user)
       .then((result) => {
         dispatch({ type: API_READY });
-        Actions.chatRoom();
+        // Actions.chatRoom();
         dispatch({
           type: USER_SIGNED_IN,
           payload: result.data
