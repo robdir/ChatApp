@@ -14,8 +14,9 @@ export default class App extends Component<{}> {
       <Provider store={store}>
         <Router>
           <Scene key="root">
-            <Scene key="signIn" component={SignIn} title="Sign In" initial={true} />
+            <Scene key="signIn" component={SignIn} title="Sign In" initial={true}/>
             <Scene key="signUp" component={SignUp} title="Sign Up" />
+            <Scene key="chatRoom" component={ChatRoom} title="Chat Room"/>
           </Scene>
         </Router>
       </Provider>

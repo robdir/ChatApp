@@ -3,7 +3,7 @@ import {
   MESSAGE_CREATED,
   MESSAGE_UPDATED,
   MESSAGE_REMOVED
-} from '../actions/messages/subcribe'
+} from '../actions/messages/subscribe'
 
 export default (state = [], { type, payload } = {}) => {
   switch (type) {

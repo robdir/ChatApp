@@ -8,7 +8,7 @@ import {
  } from 'react-native';
 import styles from './SignUp.styles';
 import t from 'tcomb-form-native';
-import User, { formOptions } from '../models/User';
+import Person, { formOptions } from '../models/Person';
 import signUp from '../actions/users/sign-up';
 
 class SignUp extends Component {
@@ -52,13 +52,12 @@ class SignUp extends Component {
         <Text style={styles.title}> Sign up for ChatApp</Text>
         <Form
           ref="form"
-          type={User}
+          type={Person}
           options={formOptions}
           value={this.state.newUser}
           onChange={this.onChange}
         />
         <TouchableHighlight
-          disabled={loading}
           style={styles.buttonPrimary}
           onPress={this.onSubmit}
           underlayColor='#99d9f4'
@@ -67,7 +66,6 @@ class SignUp extends Component {
         </TouchableHighlight>
 
         <TouchableHighlight
-          disabled={loading}
           style={styles.buttonSecondary}
           onPress={this.onSubmit}
           underlayColor='#99d9f4'

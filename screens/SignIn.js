@@ -7,9 +7,8 @@ import ReactNative, {
 } from 'react-native';
 import { connect } from 'react-redux';
 import { Actions } from 'react-native-router-flux';
-// See: https://github.com/gcanti/tcomb-form-native
 import t from 'tcomb-form-native';
-import Person, { formOptions } from '../models/Person';
+import User, { formOptions } from '../models/User';
 import loadUser from '../actions/users/load';
 import signIn from '../actions/users/sign-in';
 import styles from './SignUp.styles';
@@ -54,7 +53,7 @@ class SignIn extends Component {
         <KeyboardAvoidingView
           behavior="padding"
           style={styles.container}>
-          <Text style={styles.title}>Sign into ShatApp</Text>
+          <Text style={styles.title}>Sign in!</Text>
           { user && user.error ? <Text style={styles.error}>{user.error.name} { user.error.message }</Text> : null }
 
           <Form

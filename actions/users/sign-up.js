@@ -3,8 +3,8 @@ import signIn from './sign-in';
 import {
   API_LOADING,
   API_READY,
-  API_ERROR
-} from '../../middleware/api';
+  API_ERROR,
+} from '../../middleware/api'
 
 const api = new API();
 const users = api.service('users');
