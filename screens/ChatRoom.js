@@ -8,7 +8,6 @@ import ReactNative, {
 } from 'react-native';
 import { connect } from 'react-redux';
 import { Actions } from 'react-native-router-flux';
-// See: https://github.com/gcanti/tcomb-form-native
 import t from 'tcomb-form-native';
 import ChatMessage, { formOptions } from '../models/ChatMessage';
 import loadUser from '../actions/users/load';
